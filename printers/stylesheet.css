@@ -1,0 +1,99 @@
+body {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+@media print {
+    @page {
+        size: A4 landscape;
+        margin: 1.5cm;
+    }
+
+    table {
+        break-inside: avoid !important;
+    }
+}
+
+main {
+    margin: auto;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: normal;
+}
+
+.simplex-table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+
+.simplex-table td {
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid black;
+    padding: 4px;
+    min-width: 70px;
+    max-width: 70px;
+}
+
+.simplex-table .simplex-table-header td {
+    //font-weight: bold;
+    font-family: monospace;
+}
+
+.simplex-table .simplex-table-text {
+    //font-weight: bold;
+    font-family: monospace;
+}
+
+.simplex-table .simplex-table-iter {
+    //font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+}
+
+.simplex-table .simplex-table-flags {
+    font-size: 14px;
+    font-family: monospace;
+    text-align: right;
+}
+
+.simplex-table .simplex-table-stub {
+    //font-weight: bold;
+    font-family: monospace;
+    text-align: right;
+}
+
+.simplex-table .simplex-table-w {
+    //font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.analysis-table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.analysis-table td {
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid black;
+    padding: 6px;
+}
+
+.analysis-table-header td {
+    //font-weight: bold;
+    font-family: monospace;
+}
